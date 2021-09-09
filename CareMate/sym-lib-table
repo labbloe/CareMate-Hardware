@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name CareMate_Library)(type Legacy)(uri "${MRDT_KICAD_LIBRARIES}/Senior Design/CareMate/CareMate_Library.lib")(options "")(descr ""))
   (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri C:/Users/sinke/Downloads/ESP32-DEVKITC-32D/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+  (lib (name CareMate-rescue)(type Legacy)(uri ${KIPRJMOD}/CareMate-rescue.lib)(options "")(descr ""))
 )
