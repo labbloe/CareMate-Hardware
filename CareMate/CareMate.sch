@@ -237,7 +237,7 @@ U 1 1 609663E8
 P 8750 4400
 F 0 "J7" V 8622 4580 50  0000 L CNN
 F 1 "Conn_01x03" V 8713 4580 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector" H 8750 4400 50  0001 C CNN
+F 2 "Additional Libraries:3PinConnector_Official" H 8750 4400 50  0001 C CNN
 F 3 "~" H 8750 4400 50  0001 C CNN
 	1    8750 4400
 	0    1    1    0   
@@ -515,7 +515,7 @@ U 1 1 61316F6A
 P 5050 5650
 F 0 "J3" V 4922 5830 50  0000 L CNN
 F 1 "Conn_01x03" V 5013 5830 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector" H 5050 5650 50  0001 C CNN
+F 2 "Additional Libraries:3PinConnector_Official" H 5050 5650 50  0001 C CNN
 F 3 "~" H 5050 5650 50  0001 C CNN
 	1    5050 5650
 	0    1    1    0   
@@ -776,7 +776,7 @@ U 1 1 61400C2E
 P 6850 5750
 F 0 "J4" V 6722 5930 50  0000 L CNN
 F 1 "Conn_01x03" V 6813 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector" H 6850 5750 50  0001 C CNN
+F 2 "Additional Libraries:3PinConnector_Official" H 6850 5750 50  0001 C CNN
 F 3 "~" H 6850 5750 50  0001 C CNN
 	1    6850 5750
 	0    1    1    0   
@@ -787,7 +787,7 @@ U 1 1 61401242
 P 7700 5750
 F 0 "J6" V 7572 5930 50  0000 L CNN
 F 1 "Conn_01x03" V 7663 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector" H 7700 5750 50  0001 C CNN
+F 2 "Additional Libraries:3PinConnector_Official" H 7700 5750 50  0001 C CNN
 F 3 "~" H 7700 5750 50  0001 C CNN
 	1    7700 5750
 	0    1    1    0   
