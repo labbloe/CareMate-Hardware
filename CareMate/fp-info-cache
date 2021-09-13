@@ -1,4 +1,4 @@
-16565324464271908
+16573482261156258
 Additional Libraries
 3PinConnector
 
@@ -14,12 +14,47 @@ Additional Libraries
 16
 16
 Additional Libraries
+CAPC3216X190N
+
+
+0
+2
+2
+Additional Libraries
+ElechouseV3
+
+
+0
+23
+23
+Additional Libraries
 JST_B2B-PH-K-S(LF)(SN)
 
 
 0
 2
 2
+Additional Libraries
+L7805
+<b>VOLTAGE REGULATOR</b>
+
+0
+3
+3
+Additional Libraries
+LM386N
+
+
+0
+8
+8
+Additional Libraries
+SD_Card_Reader
+
+
+0
+6
+6
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
