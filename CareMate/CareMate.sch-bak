@@ -33,17 +33,6 @@ F 10 "None" H 9450 2100 50  0001 L BNN "Price"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CareMate-rescue:Elechouse_V3-CareMate_Library U3
-U 1 1 608EC375
-P 5900 950
-F 0 "U3" H 6125 1065 50  0000 C CNN
-F 1 "Elechouse_V3" H 6125 974 50  0000 C CNN
-F 2 "Additional Libraries:ElechouseV3" H 5900 950 50  0001 C CNN
-F 3 "" H 5900 950 50  0001 C CNN
-	1    5900 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Audio:LM386 U2
 U 1 1 609233F7
 P 3000 1950
@@ -178,18 +167,10 @@ Text GLabel 10350 1500 2    50   Output ~ 0
 Tx_VoiceRec
 Text GLabel 10350 1600 2    50   Input ~ 0
 Rx_VoiceRec
-Text GLabel 6800 1200 2    50   Output ~ 0
-Rx_VoiceRec
-Text GLabel 6800 1100 2    50   Input ~ 0
-Tx_VoiceRec
 Wire Wire Line
 	10350 1500 10250 1500
 Wire Wire Line
 	10250 1600 10350 1600
-Wire Wire Line
-	6800 1100 6700 1100
-Wire Wire Line
-	6800 1200 6700 1200
 $Comp
 L Connector:Barrel_Jack_MountingPin J1
 U 1 1 6095F103
@@ -300,62 +281,6 @@ Wire Wire Line
 	10250 2100 10350 2100
 Text Notes 6600 4550 0    59   ~ 12
 SD Card Reader
-Wire Wire Line
-	5550 2100 5450 2100
-Wire Wire Line
-	5450 2100 5450 2200
-$Comp
-L power:GND #PWR013
-U 1 1 6099F5ED
-P 5450 2200
-F 0 "#PWR013" H 5450 1950 50  0001 C CNN
-F 1 "GND" H 5455 2027 50  0000 C CNN
-F 2 "" H 5450 2200 50  0001 C CNN
-F 3 "" H 5450 2200 50  0001 C CNN
-	1    5450 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 2350 6900 2350
-Wire Wire Line
-	6900 2350 6900 2500
-$Comp
-L power:GND #PWR018
-U 1 1 609A0E21
-P 6900 2500
-F 0 "#PWR018" H 6900 2250 50  0001 C CNN
-F 1 "GND" H 6905 2327 50  0000 C CNN
-F 2 "" H 6900 2500 50  0001 C CNN
-F 3 "" H 6900 2500 50  0001 C CNN
-	1    6900 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 1100 5100 1100
-$Comp
-L power:GND #PWR011
-U 1 1 609A249A
-P 5100 1100
-F 0 "#PWR011" H 5100 850 50  0001 C CNN
-F 1 "GND" H 5105 927 50  0000 C CNN
-F 2 "" H 5100 1100 50  0001 C CNN
-F 3 "" H 5100 1100 50  0001 C CNN
-	1    5100 1100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 1400 6900 1400
-$Comp
-L power:GND #PWR017
-U 1 1 609A4096
-P 6900 1400
-F 0 "#PWR017" H 6900 1150 50  0001 C CNN
-F 1 "GND" H 6905 1227 50  0000 C CNN
-F 2 "" H 6900 1400 50  0001 C CNN
-F 3 "" H 6900 1400 50  0001 C CNN
-	1    6900 1400
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 609A58DA
@@ -398,7 +323,7 @@ Text Notes 9950 4650 0    59   ~ 12
 Speaker Connector
 Text Notes 1800 2600 0    59   ~ 12
 Amplification Circuit
-Text Notes 5550 2750 0    59   ~ 12
+Text Notes 5750 3000 0    59   ~ 12
 Voice Recognition Module
 Text Notes 9100 3250 0    59   ~ 12
 ESP32 DevBoard
@@ -667,22 +592,6 @@ Wire Wire Line
 	5400 4050 5400 3900
 Text GLabel 5200 3900 1    50   Input ~ 0
 MOSI2
-NoConn ~ 5550 2000
-NoConn ~ 5550 1800
-NoConn ~ 5550 1700
-NoConn ~ 5550 1600
-NoConn ~ 5550 1500
-NoConn ~ 5550 1400
-NoConn ~ 5550 1300
-NoConn ~ 5550 1200
-NoConn ~ 6700 1550
-NoConn ~ 6700 1650
-NoConn ~ 6700 1750
-NoConn ~ 6700 1850
-NoConn ~ 6700 2050
-NoConn ~ 6750 2150
-NoConn ~ 6700 2250
-NoConn ~ 6700 2450
 Text GLabel 5100 3900 1    50   Input ~ 0
 CS2
 Text GLabel 4900 3900 1    50   Input ~ 0
@@ -828,21 +737,6 @@ NoConn ~ 8650 1400
 NoConn ~ 8650 1300
 Text Notes 6950 5950 0    59   ~ 12
 Limit Switches
-$Comp
-L power:+5V #PWR019
-U 1 1 61435B91
-P 7550 1250
-F 0 "#PWR019" H 7550 1100 50  0001 C CNN
-F 1 "+5V" H 7565 1423 50  0000 C CNN
-F 2 "" H 7550 1250 50  0001 C CNN
-F 3 "" H 7550 1250 50  0001 C CNN
-	1    7550 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 1300 7550 1250
-Wire Wire Line
-	6700 1300 7550 1300
 Wire Wire Line
 	8400 3000 8650 3000
 $Comp
@@ -870,4 +764,85 @@ $EndComp
 Wire Wire Line
 	3950 2600 3950 2700
 NoConn ~ 2950 4350
+$Comp
+L Connector_Generic:Conn_01x16 J9
+U 1 1 6144FCF8
+P 6400 2600
+F 0 "J9" V 6525 2546 50  0000 C CNN
+F 1 "Conn_01x16" V 6616 2546 50  0000 C CNN
+F 2 "Additional Libraries:16PinConnector" H 6400 2600 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 6146437C
+P 7100 2200
+F 0 "#PWR018" H 7100 1950 50  0001 C CNN
+F 1 "GND" H 7105 2027 50  0000 C CNN
+F 2 "" H 7100 2200 50  0001 C CNN
+F 3 "" H 7100 2200 50  0001 C CNN
+	1    7100 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 2200 7100 2400
+$Comp
+L power:GND #PWR017
+U 1 1 614683C2
+P 6200 2200
+F 0 "#PWR017" H 6200 1950 50  0001 C CNN
+F 1 "GND" H 6205 2027 50  0000 C CNN
+F 2 "" H 6200 2200 50  0001 C CNN
+F 3 "" H 6200 2200 50  0001 C CNN
+	1    6200 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2400 6200 2200
+Text GLabel 6100 1900 1    50   Input ~ 0
+Tx_VoiceRec
+Wire Wire Line
+	6100 1900 6100 2400
+Text GLabel 6000 1900 1    50   Output ~ 0
+Rx_VoiceRec
+Wire Wire Line
+	6000 1900 6000 2400
+$Comp
+L power:+5V #PWR013
+U 1 1 61473728
+P 5900 1750
+F 0 "#PWR013" H 5900 1600 50  0001 C CNN
+F 1 "+5V" H 5915 1923 50  0000 C CNN
+F 2 "" H 5900 1750 50  0001 C CNN
+F 3 "" H 5900 1750 50  0001 C CNN
+	1    5900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1750 5900 2400
+$Comp
+L power:GND #PWR011
+U 1 1 614773AF
+P 5800 2150
+F 0 "#PWR011" H 5800 1900 50  0001 C CNN
+F 1 "GND" H 5805 1977 50  0000 C CNN
+F 2 "" H 5800 2150 50  0001 C CNN
+F 3 "" H 5800 2150 50  0001 C CNN
+	1    5800 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 2150 5800 2400
+NoConn ~ 5600 2400
+NoConn ~ 5700 2400
+NoConn ~ 6300 2400
+NoConn ~ 6400 2400
+NoConn ~ 6500 2400
+NoConn ~ 6600 2400
+NoConn ~ 6700 2400
+NoConn ~ 6800 2400
+NoConn ~ 6900 2400
+NoConn ~ 7000 2400
 $EndSCHEMATC
