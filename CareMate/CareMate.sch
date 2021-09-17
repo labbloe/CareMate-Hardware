@@ -594,8 +594,6 @@ Text GLabel 5100 3900 1    50   Input ~ 0
 CS2
 Text GLabel 4900 3900 1    50   Input ~ 0
 RST
-Text GLabel 5000 3900 1    50   Input ~ 0
-D_C
 Text GLabel 4800 3900 1    50   Input ~ 0
 Lite
 Text GLabel 4700 3900 1    50   Output ~ 0
@@ -628,8 +626,6 @@ Text GLabel 8550 2300 0    50   Output ~ 0
 clk2
 Wire Wire Line
 	8650 2300 8550 2300
-Text GLabel 8550 1700 0    50   Output ~ 0
-D_C
 Wire Wire Line
 	8550 1700 8650 1700
 Text GLabel 8550 1800 0    50   Output ~ 0
@@ -843,4 +839,7 @@ NoConn ~ 6700 2400
 NoConn ~ 6800 2400
 NoConn ~ 6900 2400
 NoConn ~ 7000 2400
+Text GLabel 8550 1700 0    59   Input ~ 0
+Mic_Out
+NoConn ~ 5000 3900
 $EndSCHEMATC

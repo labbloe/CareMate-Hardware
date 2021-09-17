@@ -337,8 +337,6 @@ Wire Wire Line
 	10250 1400 10350 1400
 Wire Wire Line
 	10350 1700 10250 1700
-Text Notes 900  3500 0    50   ~ 0
-*Pull up resistor on SD Card Reader\n**Additional Microphone Connect to elechouse and ESP\n***Limit Switch\n****5V Regulator
 $Comp
 L Regulator_Linear:L7805 U1
 U 1 1 612EA107
