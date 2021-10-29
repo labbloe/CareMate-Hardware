@@ -163,10 +163,8 @@ Amp_Output
 Text GLabel 1950 1850 0    50   Input ~ 0
 Unamplified_Signal
 NoConn ~ 3000 1650
-Text GLabel 10350 1500 2    50   Output ~ 0
-Tx_VoiceRec
-Text GLabel 10350 1600 2    50   Input ~ 0
-Rx_VoiceRec
+Text GLabel 10350 1500 2    50   Input ~ 0
+Button_1
 Wire Wire Line
 	10350 1500 10250 1500
 Wire Wire Line
@@ -218,7 +216,7 @@ U 1 1 609663E8
 P 8750 4400
 F 0 "J7" V 8622 4580 50  0000 L CNN
 F 1 "Conn_01x03" V 8713 4580 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 8750 4400 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 8750 4400 50  0001 C CNN
 F 3 "~" H 8750 4400 50  0001 C CNN
 	1    8750 4400
 	0    1    1    0   
@@ -287,7 +285,7 @@ U 1 1 609A58DA
 P 10400 4400
 F 0 "J8" V 10364 4212 50  0000 R CNN
 F 1 "Conn_01x02" V 10273 4212 50  0000 R CNN
-F 2 "Additional Libraries:JST_B2B-PH-K-S(LF)(SN)" H 10400 4400 50  0001 C CNN
+F 2 "Additional Libraries:Easy_2Pin" H 10400 4400 50  0001 C CNN
 F 3 "~" H 10400 4400 50  0001 C CNN
 	1    10400 4400
 	0    1    1    0   
@@ -323,8 +321,6 @@ Text Notes 9950 4650 0    59   ~ 12
 Speaker Connector
 Text Notes 1800 2600 0    59   ~ 12
 Amplification Circuit
-Text Notes 5750 3000 0    59   ~ 12
-Voice Recognition Module
 Text Notes 9100 3250 0    59   ~ 12
 ESP32 DevBoard
 Text Notes 8750 4950 0    47   ~ 0
@@ -438,7 +434,7 @@ U 1 1 61316F6A
 P 5050 5650
 F 0 "J3" V 4922 5830 50  0000 L CNN
 F 1 "Conn_01x03" V 5013 5830 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 5050 5650 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 5050 5650 50  0001 C CNN
 F 3 "~" H 5050 5650 50  0001 C CNN
 	1    5050 5650
 	0    1    1    0   
@@ -679,7 +675,7 @@ U 1 1 61400C2E
 P 6850 5750
 F 0 "J4" V 6722 5930 50  0000 L CNN
 F 1 "Conn_01x03" V 6813 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 6850 5750 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 6850 5750 50  0001 C CNN
 F 3 "~" H 6850 5750 50  0001 C CNN
 	1    6850 5750
 	0    1    1    0   
@@ -690,7 +686,7 @@ U 1 1 61401242
 P 7700 5750
 F 0 "J6" V 7572 5930 50  0000 L CNN
 F 1 "Conn_01x03" V 7663 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 7700 5750 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 7700 5750 50  0001 C CNN
 F 3 "~" H 7700 5750 50  0001 C CNN
 	1    7700 5750
 	0    1    1    0   
@@ -758,88 +754,71 @@ $EndComp
 Wire Wire Line
 	3950 2600 3950 2700
 NoConn ~ 2950 4350
-$Comp
-L Connector_Generic:Conn_01x16 J9
-U 1 1 6144FCF8
-P 6400 2600
-F 0 "J9" V 6525 2546 50  0000 C CNN
-F 1 "Conn_01x16" V 6616 2546 50  0000 C CNN
-F 2 "Additional Libraries:16PinConnector" H 6400 2600 50  0001 C CNN
-F 3 "~" H 6400 2600 50  0001 C CNN
-	1    6400 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 6146437C
-P 7100 2200
-F 0 "#PWR018" H 7100 1950 50  0001 C CNN
-F 1 "GND" H 7105 2027 50  0000 C CNN
-F 2 "" H 7100 2200 50  0001 C CNN
-F 3 "" H 7100 2200 50  0001 C CNN
-	1    7100 2200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7100 2200 7100 2400
-$Comp
-L power:GND #PWR017
-U 1 1 614683C2
-P 6200 2200
-F 0 "#PWR017" H 6200 1950 50  0001 C CNN
-F 1 "GND" H 6205 2027 50  0000 C CNN
-F 2 "" H 6200 2200 50  0001 C CNN
-F 3 "" H 6200 2200 50  0001 C CNN
-	1    6200 2200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 2400 6200 2200
-Text GLabel 6100 1900 1    50   Input ~ 0
-Tx_VoiceRec
-Wire Wire Line
-	6100 1900 6100 2400
-Text GLabel 6000 1900 1    50   Output ~ 0
-Rx_VoiceRec
-Wire Wire Line
-	6000 1900 6000 2400
-$Comp
-L power:+5V #PWR013
-U 1 1 61473728
-P 5900 1750
-F 0 "#PWR013" H 5900 1600 50  0001 C CNN
-F 1 "+5V" H 5915 1923 50  0000 C CNN
-F 2 "" H 5900 1750 50  0001 C CNN
-F 3 "" H 5900 1750 50  0001 C CNN
-	1    5900 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1750 5900 2400
-$Comp
-L power:GND #PWR011
-U 1 1 614773AF
-P 5800 2150
-F 0 "#PWR011" H 5800 1900 50  0001 C CNN
-F 1 "GND" H 5805 1977 50  0000 C CNN
-F 2 "" H 5800 2150 50  0001 C CNN
-F 3 "" H 5800 2150 50  0001 C CNN
-	1    5800 2150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5800 2150 5800 2400
-NoConn ~ 5600 2400
-NoConn ~ 5700 2400
-NoConn ~ 6300 2400
-NoConn ~ 6400 2400
-NoConn ~ 6500 2400
-NoConn ~ 6600 2400
-NoConn ~ 6700 2400
-NoConn ~ 6800 2400
-NoConn ~ 6900 2400
-NoConn ~ 7000 2400
+Text GLabel 6550 1900 1    50   Output ~ 0
+Button_1
+Text GLabel 5400 1900 1    50   Output ~ 0
+Button_2
 Text GLabel 8550 1700 0    59   Input ~ 0
 Mic_Out
 NoConn ~ 5000 3900
+Text Notes 5700 2700 0    59   ~ 12
+ Buttons
+$Comp
+L MRDT_Connectors:Molex_SL_02 Conn2
+U 1 1 617F418F
+P 6400 2300
+F 0 "Conn2" V 6289 2538 60  0000 L CNN
+F 1 "Molex_SL_02" V 6395 2538 60  0000 L CNN
+F 2 "Additional Libraries:Easy_2Pin" H 6400 2200 60  0001 C CNN
+F 3 "" H 6400 2200 60  0001 C CNN
+	1    6400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_02 Conn1
+U 1 1 617F5383
+P 5250 2300
+F 0 "Conn1" V 5139 2538 60  0000 L CNN
+F 1 "Molex_SL_02" V 5245 2538 60  0000 L CNN
+F 2 "Additional Libraries:Easy_2Pin" H 5250 2200 60  0001 C CNN
+F 3 "" H 5250 2200 60  0001 C CNN
+	1    5250 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1900 6550 2100
+Wire Wire Line
+	5400 1900 5400 2100
+Text GLabel 10350 1600 2    50   Input ~ 0
+Button_2
+$Comp
+L power:GND #PWR0101
+U 1 1 617FC351
+P 6350 2050
+F 0 "#PWR0101" H 6350 1800 50  0001 C CNN
+F 1 "GND" H 6355 1877 50  0000 C CNN
+F 2 "" H 6350 2050 50  0001 C CNN
+F 3 "" H 6350 2050 50  0001 C CNN
+	1    6350 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 2100 6350 2100
+Wire Wire Line
+	6350 2100 6350 2050
+$Comp
+L power:GND #PWR0102
+U 1 1 61800077
+P 5200 2050
+F 0 "#PWR0102" H 5200 1800 50  0001 C CNN
+F 1 "GND" H 5205 1877 50  0000 C CNN
+F 2 "" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	1    5200 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2050 5300 2050
+Wire Wire Line
+	5300 2050 5300 2100
 $EndSCHEMATC
