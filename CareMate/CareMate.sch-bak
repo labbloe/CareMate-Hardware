@@ -163,12 +163,8 @@ Amp_Output
 Text GLabel 1950 1850 0    50   Input ~ 0
 Unamplified_Signal
 NoConn ~ 3000 1650
-Text GLabel 10350 1500 2    50   Input ~ 0
+Text GLabel 8550 1600 0    50   Input ~ 0
 Button_1
-Wire Wire Line
-	10350 1500 10250 1500
-Wire Wire Line
-	10250 1600 10350 1600
 $Comp
 L Connector:Barrel_Jack_MountingPin J1
 U 1 1 6095F103
@@ -222,17 +218,6 @@ F 3 "~" H 8750 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+9V #PWR022
-U 1 1 60967D50
-P 9000 4000
-F 0 "#PWR022" H 9000 3850 50  0001 C CNN
-F 1 "+9V" H 9015 4173 50  0000 C CNN
-F 2 "" H 9000 4000 50  0001 C CNN
-F 3 "" H 9000 4000 50  0001 C CNN
-	1    9000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR021
 U 1 1 60968C57
 P 8750 4000
@@ -255,25 +240,19 @@ Wire Wire Line
 	8650 4000 8500 4000
 Text GLabel 8500 4000 0    50   Input ~ 0
 Servo_1
-Text GLabel 10400 2600 2    50   Output ~ 0
+Text GLabel 8550 2100 0    50   Output ~ 0
 Servo_1
 Wire Wire Line
 	10250 2000 10350 2000
-Text GLabel 10350 2000 2    50   Output ~ 0
+Text GLabel 8550 2300 0    50   Output ~ 0
 clk1
 Wire Wire Line
 	10250 1900 10350 1900
-Text GLabel 10350 1900 2    50   Input ~ 0
-MISO1
-Text Notes 10550 2050 0    50   ~ 0
-SCK1
-Text Notes 10550 2150 0    50   ~ 0
-SS1
 Wire Wire Line
 	10250 1300 10350 1300
-Text GLabel 10350 1300 2    50   Output ~ 0
+Text GLabel 8550 2600 0    50   Output ~ 0
 MOSI1
-Text GLabel 10350 2100 2    50   Output ~ 0
+Text GLabel 10400 2700 2    50   Output ~ 0
 CS1
 Wire Wire Line
 	10250 2100 10350 2100
@@ -311,7 +290,7 @@ Text Notes 2000 1900 0    35   ~ 0
 Resistor or potentiometer\n here to control volume
 Wire Wire Line
 	1950 1850 2700 1850
-Text GLabel 8550 1600 0    50   Output ~ 0
+Text GLabel 8550 2000 0    50   Output ~ 0
 Unamplified_Signal
 Text Notes 2650 4550 0    59   ~ 12
 Simple Barrel Plug Power
@@ -549,8 +528,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 4050 5000 3900
 Wire Wire Line
-	4900 4050 4900 3900
-Wire Wire Line
 	4800 4050 4800 3900
 Wire Wire Line
 	4700 4050 4700 3900
@@ -588,8 +565,6 @@ Text GLabel 5200 3900 1    50   Input ~ 0
 MOSI2
 Text GLabel 5100 3900 1    50   Input ~ 0
 CS2
-Text GLabel 4900 3900 1    50   Input ~ 0
-RST
 Text GLabel 4800 3900 1    50   Input ~ 0
 Lite
 Text GLabel 4700 3900 1    50   Output ~ 0
@@ -606,51 +581,43 @@ Text GLabel 4300 3900 1    50   Input ~ 0
 Card_CS
 Text Notes 4500 4450 0    59   ~ 12
 3.5'' Touchscreen
-Text GLabel 8550 2400 0    50   Input ~ 0
+Text GLabel 10350 1900 2    50   Input ~ 0
 MISO2
-Text GLabel 8550 2600 0    50   Output ~ 0
+Text GLabel 10350 1300 2    50   Output ~ 0
 MOSI2
-Text GLabel 10400 2700 2    50   Output ~ 0
+Text GLabel 10350 2200 2    50   Output ~ 0
 CS2
 Wire Wire Line
 	8550 1600 8650 1600
-Wire Wire Line
-	8650 2400 8550 2400
-Wire Wire Line
-	8650 2600 8550 2600
-Text GLabel 8550 2300 0    50   Output ~ 0
+Text GLabel 10350 2000 2    50   Output ~ 0
 clk2
 Wire Wire Line
 	8650 2300 8550 2300
 Wire Wire Line
 	8550 1700 8650 1700
-Text GLabel 8550 1800 0    50   Output ~ 0
-RST
 Wire Wire Line
 	8550 1800 8650 1800
-Text GLabel 8550 1900 0    50   Output ~ 0
+Text GLabel 10350 2600 2    50   Output ~ 0
 Lite
 Wire Wire Line
 	8550 1900 8650 1900
 Wire Wire Line
-	10250 2600 10400 2600
-Wire Wire Line
 	10250 2400 10350 2400
 Wire Wire Line
 	10250 2500 10350 2500
-Text GLabel 8550 2200 0    50   Input ~ 0
+Text GLabel 8550 1900 0    50   Input ~ 0
 Y+
-Text GLabel 8550 2100 0    50   Input ~ 0
-X+
 Text GLabel 10350 2400 2    50   Input ~ 0
-Y-
+X+
 Text GLabel 10350 2500 2    50   Input ~ 0
+Y-
+Text GLabel 8550 1800 0    50   Input ~ 0
 X-
 Wire Wire Line
 	8550 2100 8650 2100
 Wire Wire Line
 	8550 2200 8650 2200
-Text GLabel 8550 2000 0    50   Output ~ 0
+Text GLabel 10350 2100 2    50   Output ~ 0
 Card_CS
 Wire Wire Line
 	8550 2000 8650 2000
@@ -680,66 +647,28 @@ F 3 "~" H 6850 5750 50  0001 C CNN
 	1    6850 5750
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 61401242
-P 7700 5750
-F 0 "J6" V 7572 5930 50  0000 L CNN
-F 1 "Conn_01x03" V 7663 5930 50  0000 L CNN
-F 2 "Additional Libraries:Easy_3Pin" H 7700 5750 50  0001 C CNN
-F 3 "~" H 7700 5750 50  0001 C CNN
-	1    7700 5750
-	0    1    1    0   
-$EndComp
 Text GLabel 6950 5450 1    50   Output ~ 0
 LS_1
 Wire Wire Line
 	6950 5450 6950 5550
-Text GLabel 7800 5450 1    50   Output ~ 0
-LS_2
-Wire Wire Line
-	7800 5450 7800 5550
 Wire Wire Line
 	6750 5550 6750 5450
-Wire Wire Line
-	7600 5550 7600 5450
 Text GLabel 6750 5450 1    50   Input ~ 0
 3.3V
-Text GLabel 7600 5450 1    50   Input ~ 0
-3.3V
 NoConn ~ 6850 5550
-NoConn ~ 7700 5550
 Text GLabel 10350 1400 2    50   Input ~ 0
 LS_1
-Text GLabel 10350 1700 2    50   Input ~ 0
-LS_2
-NoConn ~ 10250 1800
-NoConn ~ 10250 2200
 NoConn ~ 10250 2800
 NoConn ~ 10250 2900
 NoConn ~ 10250 3000
-NoConn ~ 8650 2500
 NoConn ~ 8650 2700
 NoConn ~ 8650 2800
 NoConn ~ 8650 2900
 NoConn ~ 8650 1500
 NoConn ~ 8650 1400
 NoConn ~ 8650 1300
-Text Notes 6950 5950 0    59   ~ 12
-Limit Switches
-Wire Wire Line
-	8400 3000 8650 3000
-$Comp
-L power:+5V #PWR020
-U 1 1 6144058A
-P 8400 3000
-F 0 "#PWR020" H 8400 2850 50  0001 C CNN
-F 1 "+5V" V 8415 3128 50  0000 L CNN
-F 2 "" H 8400 3000 50  0001 C CNN
-F 3 "" H 8400 3000 50  0001 C CNN
-	1    8400 3000
-	0    -1   -1   0   
-$EndComp
+Text Notes 6600 5950 0    59   ~ 12
+Limit Switch
 $Comp
 L Device:C_Small C4
 U 1 1 612F1084
@@ -758,9 +687,8 @@ Text GLabel 6550 1900 1    50   Output ~ 0
 Button_1
 Text GLabel 5400 1900 1    50   Output ~ 0
 Button_2
-Text GLabel 8550 1700 0    59   Input ~ 0
+Text GLabel 8550 2200 0    59   Input ~ 0
 Mic_Out
-NoConn ~ 5000 3900
 Text Notes 5700 2700 0    59   ~ 12
  Buttons
 $Comp
@@ -789,7 +717,7 @@ Wire Wire Line
 	6550 1900 6550 2100
 Wire Wire Line
 	5400 1900 5400 2100
-Text GLabel 10350 1600 2    50   Input ~ 0
+Text GLabel 8550 1700 0    50   Input ~ 0
 Button_2
 $Comp
 L power:GND #PWR0101
@@ -821,4 +749,74 @@ Wire Wire Line
 	5200 2050 5300 2050
 Wire Wire Line
 	5300 2050 5300 2100
+Wire Wire Line
+	10250 1200 10850 1200
+$Comp
+L power:GND #PWR?
+U 1 1 61832251
+P 10850 1200
+F 0 "#PWR?" H 10850 950 50  0001 C CNN
+F 1 "GND" H 10855 1027 50  0000 C CNN
+F 2 "" H 10850 1200 50  0001 C CNN
+F 3 "" H 10850 1200 50  0001 C CNN
+	1    10850 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 2400 8550 2400
+Wire Wire Line
+	10250 1800 10900 1800
+$Comp
+L power:GND #PWR?
+U 1 1 61839CBB
+P 10900 1800
+F 0 "#PWR?" H 10900 1550 50  0001 C CNN
+F 1 "GND" H 10905 1627 50  0000 C CNN
+F 2 "" H 10900 1800 50  0001 C CNN
+F 3 "" H 10900 1800 50  0001 C CNN
+	1    10900 1800
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8650 2500
+$Comp
+L power:+5V #PWR?
+U 1 1 61854C7E
+P 9000 4000
+F 0 "#PWR?" H 9000 3850 50  0001 C CNN
+F 1 "+5V" H 9015 4173 50  0000 C CNN
+F 2 "" H 9000 4000 50  0001 C CNN
+F 3 "" H 9000 4000 50  0001 C CNN
+	1    9000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2200 10350 2200
+Text GLabel 5000 3900 1    50   Input ~ 0
+D_C
+Text GLabel 10350 1700 2    50   Output ~ 0
+D_C
+Wire Wire Line
+	8650 2600 8550 2600
+Text GLabel 8550 2400 0    50   Input ~ 0
+MISO1
+Wire Wire Line
+	4900 4050 4900 3900
+NoConn ~ 4900 3900
+Wire Wire Line
+	8650 3000 8050 3000
+Wire Wire Line
+	8050 3000 8050 2900
+$Comp
+L power:+5V #PWR?
+U 1 1 6186BFA8
+P 8050 2900
+F 0 "#PWR?" H 8050 2750 50  0001 C CNN
+F 1 "+5V" H 8065 3073 50  0000 C CNN
+F 2 "" H 8050 2900 50  0001 C CNN
+F 3 "" H 8050 2900 50  0001 C CNN
+	1    8050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2600 10350 2600
 $EndSCHEMATC
