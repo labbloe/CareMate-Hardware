@@ -163,14 +163,8 @@ Amp_Output
 Text GLabel 1950 1850 0    50   Input ~ 0
 Unamplified_Signal
 NoConn ~ 3000 1650
-Text GLabel 10350 1500 2    50   Output ~ 0
-Tx_VoiceRec
-Text GLabel 10350 1600 2    50   Input ~ 0
-Rx_VoiceRec
-Wire Wire Line
-	10350 1500 10250 1500
-Wire Wire Line
-	10250 1600 10350 1600
+Text GLabel 8550 1600 0    50   Input ~ 0
+Button_1
 $Comp
 L Connector:Barrel_Jack_MountingPin J1
 U 1 1 6095F103
@@ -218,21 +212,10 @@ U 1 1 609663E8
 P 8750 4400
 F 0 "J7" V 8622 4580 50  0000 L CNN
 F 1 "Conn_01x03" V 8713 4580 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 8750 4400 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 8750 4400 50  0001 C CNN
 F 3 "~" H 8750 4400 50  0001 C CNN
 	1    8750 4400
 	0    1    1    0   
-$EndComp
-$Comp
-L power:+9V #PWR022
-U 1 1 60967D50
-P 9000 4000
-F 0 "#PWR022" H 9000 3850 50  0001 C CNN
-F 1 "+9V" H 9015 4173 50  0000 C CNN
-F 2 "" H 9000 4000 50  0001 C CNN
-F 3 "" H 9000 4000 50  0001 C CNN
-	1    9000 4000
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR021
@@ -257,25 +240,19 @@ Wire Wire Line
 	8650 4000 8500 4000
 Text GLabel 8500 4000 0    50   Input ~ 0
 Servo_1
-Text GLabel 10400 2600 2    50   Output ~ 0
+Text GLabel 8550 2100 0    50   Output ~ 0
 Servo_1
 Wire Wire Line
 	10250 2000 10350 2000
-Text GLabel 10350 2000 2    50   Output ~ 0
+Text GLabel 8550 2300 0    50   Output ~ 0
 clk1
 Wire Wire Line
 	10250 1900 10350 1900
-Text GLabel 10350 1900 2    50   Input ~ 0
-MISO1
-Text Notes 10550 2050 0    50   ~ 0
-SCK1
-Text Notes 10550 2150 0    50   ~ 0
-SS1
 Wire Wire Line
 	10250 1300 10350 1300
-Text GLabel 10350 1300 2    50   Output ~ 0
+Text GLabel 8550 2600 0    50   Output ~ 0
 MOSI1
-Text GLabel 10350 2100 2    50   Output ~ 0
+Text GLabel 10400 2700 2    50   Output ~ 0
 CS1
 Wire Wire Line
 	10250 2100 10350 2100
@@ -287,7 +264,7 @@ U 1 1 609A58DA
 P 10400 4400
 F 0 "J8" V 10364 4212 50  0000 R CNN
 F 1 "Conn_01x02" V 10273 4212 50  0000 R CNN
-F 2 "Additional Libraries:JST_B2B-PH-K-S(LF)(SN)" H 10400 4400 50  0001 C CNN
+F 2 "Additional Libraries:Easy_2Pin" H 10400 4400 50  0001 C CNN
 F 3 "~" H 10400 4400 50  0001 C CNN
 	1    10400 4400
 	0    1    1    0   
@@ -313,7 +290,7 @@ Text Notes 2000 1900 0    35   ~ 0
 Resistor or potentiometer\n here to control volume
 Wire Wire Line
 	1950 1850 2700 1850
-Text GLabel 8550 1600 0    50   Output ~ 0
+Text GLabel 8550 2000 0    50   Output ~ 0
 Unamplified_Signal
 Text Notes 2650 4550 0    59   ~ 12
 Simple Barrel Plug Power
@@ -323,8 +300,6 @@ Text Notes 9950 4650 0    59   ~ 12
 Speaker Connector
 Text Notes 1800 2600 0    59   ~ 12
 Amplification Circuit
-Text Notes 5750 3000 0    59   ~ 12
-Voice Recognition Module
 Text Notes 9100 3250 0    59   ~ 12
 ESP32 DevBoard
 Text Notes 8750 4950 0    47   ~ 0
@@ -438,7 +413,7 @@ U 1 1 61316F6A
 P 5050 5650
 F 0 "J3" V 4922 5830 50  0000 L CNN
 F 1 "Conn_01x03" V 5013 5830 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 5050 5650 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 5050 5650 50  0001 C CNN
 F 3 "~" H 5050 5650 50  0001 C CNN
 	1    5050 5650
 	0    1    1    0   
@@ -553,8 +528,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 4050 5000 3900
 Wire Wire Line
-	4900 4050 4900 3900
-Wire Wire Line
 	4800 4050 4800 3900
 Wire Wire Line
 	4700 4050 4700 3900
@@ -592,8 +565,6 @@ Text GLabel 5200 3900 1    50   Input ~ 0
 MOSI2
 Text GLabel 5100 3900 1    50   Input ~ 0
 CS2
-Text GLabel 4900 3900 1    50   Input ~ 0
-RST
 Text GLabel 4800 3900 1    50   Input ~ 0
 Lite
 Text GLabel 4700 3900 1    50   Output ~ 0
@@ -604,62 +575,50 @@ Text GLabel 4500 3900 1    50   Output ~ 0
 Y-
 Text GLabel 4400 3900 1    50   Output ~ 0
 X-
-Text GLabel 4200 3900 1    50   Output ~ 0
-Card_Detect
 Text GLabel 4300 3900 1    50   Input ~ 0
 Card_CS
 Text Notes 4500 4450 0    59   ~ 12
 3.5'' Touchscreen
-Text GLabel 8550 2400 0    50   Input ~ 0
+Text GLabel 10350 1900 2    50   Input ~ 0
 MISO2
-Text GLabel 8550 2600 0    50   Output ~ 0
+Text GLabel 10350 1300 2    50   Output ~ 0
 MOSI2
-Text GLabel 10400 2700 2    50   Output ~ 0
+Text GLabel 10350 2200 2    50   Output ~ 0
 CS2
 Wire Wire Line
 	8550 1600 8650 1600
-Wire Wire Line
-	8650 2400 8550 2400
-Wire Wire Line
-	8650 2600 8550 2600
-Text GLabel 8550 2300 0    50   Output ~ 0
+Text GLabel 10350 2000 2    50   Output ~ 0
 clk2
 Wire Wire Line
 	8650 2300 8550 2300
 Wire Wire Line
 	8550 1700 8650 1700
-Text GLabel 8550 1800 0    50   Output ~ 0
-RST
 Wire Wire Line
 	8550 1800 8650 1800
-Text GLabel 8550 1900 0    50   Output ~ 0
+Text GLabel 10350 2600 2    50   Output ~ 0
 Lite
 Wire Wire Line
 	8550 1900 8650 1900
 Wire Wire Line
-	10250 2600 10400 2600
-Wire Wire Line
 	10250 2400 10350 2400
 Wire Wire Line
 	10250 2500 10350 2500
-Text GLabel 8550 2200 0    50   Input ~ 0
+Text GLabel 8550 1900 0    50   Input ~ 0
 Y+
-Text GLabel 8550 2100 0    50   Input ~ 0
-X+
 Text GLabel 10350 2400 2    50   Input ~ 0
-Y-
+X+
 Text GLabel 10350 2500 2    50   Input ~ 0
+Y-
+Text GLabel 8550 1800 0    50   Input ~ 0
 X-
 Wire Wire Line
 	8550 2100 8650 2100
 Wire Wire Line
 	8550 2200 8650 2200
-Text GLabel 8550 2000 0    50   Output ~ 0
+Text GLabel 10350 2100 2    50   Output ~ 0
 Card_CS
 Wire Wire Line
 	8550 2000 8650 2000
-Text GLabel 10350 2300 2    50   Input ~ 0
-Card_Detect
 Wire Wire Line
 	10350 2300 10250 2300
 $Comp
@@ -679,71 +638,33 @@ U 1 1 61400C2E
 P 6850 5750
 F 0 "J4" V 6722 5930 50  0000 L CNN
 F 1 "Conn_01x03" V 6813 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 6850 5750 50  0001 C CNN
+F 2 "Additional Libraries:Easy_3Pin" H 6850 5750 50  0001 C CNN
 F 3 "~" H 6850 5750 50  0001 C CNN
 	1    6850 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 61401242
-P 7700 5750
-F 0 "J6" V 7572 5930 50  0000 L CNN
-F 1 "Conn_01x03" V 7663 5930 50  0000 L CNN
-F 2 "Additional Libraries:3PinConnector_Official" H 7700 5750 50  0001 C CNN
-F 3 "~" H 7700 5750 50  0001 C CNN
-	1    7700 5750
 	0    1    1    0   
 $EndComp
 Text GLabel 6950 5450 1    50   Output ~ 0
 LS_1
 Wire Wire Line
 	6950 5450 6950 5550
-Text GLabel 7800 5450 1    50   Output ~ 0
-LS_2
-Wire Wire Line
-	7800 5450 7800 5550
 Wire Wire Line
 	6750 5550 6750 5450
-Wire Wire Line
-	7600 5550 7600 5450
 Text GLabel 6750 5450 1    50   Input ~ 0
 3.3V
-Text GLabel 7600 5450 1    50   Input ~ 0
-3.3V
 NoConn ~ 6850 5550
-NoConn ~ 7700 5550
 Text GLabel 10350 1400 2    50   Input ~ 0
 LS_1
-Text GLabel 10350 1700 2    50   Input ~ 0
-LS_2
-NoConn ~ 10250 1800
-NoConn ~ 10250 2200
 NoConn ~ 10250 2800
 NoConn ~ 10250 2900
 NoConn ~ 10250 3000
-NoConn ~ 8650 2500
 NoConn ~ 8650 2700
 NoConn ~ 8650 2800
 NoConn ~ 8650 2900
 NoConn ~ 8650 1500
 NoConn ~ 8650 1400
 NoConn ~ 8650 1300
-Text Notes 6950 5950 0    59   ~ 12
-Limit Switches
-Wire Wire Line
-	8400 3000 8650 3000
-$Comp
-L power:+5V #PWR020
-U 1 1 6144058A
-P 8400 3000
-F 0 "#PWR020" H 8400 2850 50  0001 C CNN
-F 1 "+5V" V 8415 3128 50  0000 L CNN
-F 2 "" H 8400 3000 50  0001 C CNN
-F 3 "" H 8400 3000 50  0001 C CNN
-	1    8400 3000
-	0    -1   -1   0   
-$EndComp
+Text Notes 6600 5950 0    59   ~ 12
+Limit Switch
 $Comp
 L Device:C_Small C4
 U 1 1 612F1084
@@ -758,88 +679,146 @@ $EndComp
 Wire Wire Line
 	3950 2600 3950 2700
 NoConn ~ 2950 4350
+Text GLabel 6550 1900 1    50   Output ~ 0
+Button_1
+Text GLabel 5400 1900 1    50   Output ~ 0
+Button_2
+Text GLabel 8550 2200 0    59   Input ~ 0
+Mic_Out
+Text Notes 5700 2700 0    59   ~ 12
+ Buttons
 $Comp
-L Connector_Generic:Conn_01x16 J9
-U 1 1 6144FCF8
-P 6400 2600
-F 0 "J9" V 6525 2546 50  0000 C CNN
-F 1 "Conn_01x16" V 6616 2546 50  0000 C CNN
-F 2 "Additional Libraries:16PinConnector" H 6400 2600 50  0001 C CNN
-F 3 "~" H 6400 2600 50  0001 C CNN
-	1    6400 2600
+L MRDT_Connectors:Molex_SL_02 Conn2
+U 1 1 617F418F
+P 6400 2300
+F 0 "Conn2" V 6289 2538 60  0000 L CNN
+F 1 "Molex_SL_02" V 6395 2538 60  0000 L CNN
+F 2 "Additional Libraries:Easy_2Pin" H 6400 2200 60  0001 C CNN
+F 3 "" H 6400 2200 60  0001 C CNN
+	1    6400 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR018
-U 1 1 6146437C
-P 7100 2200
-F 0 "#PWR018" H 7100 1950 50  0001 C CNN
-F 1 "GND" H 7105 2027 50  0000 C CNN
-F 2 "" H 7100 2200 50  0001 C CNN
-F 3 "" H 7100 2200 50  0001 C CNN
-	1    7100 2200
+L MRDT_Connectors:Molex_SL_02 Conn1
+U 1 1 617F5383
+P 5250 2300
+F 0 "Conn1" V 5139 2538 60  0000 L CNN
+F 1 "Molex_SL_02" V 5245 2538 60  0000 L CNN
+F 2 "Additional Libraries:Easy_2Pin" H 5250 2200 60  0001 C CNN
+F 3 "" H 5250 2200 60  0001 C CNN
+	1    5250 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1900 6550 2100
+Wire Wire Line
+	5400 1900 5400 2100
+Text GLabel 8550 1700 0    50   Input ~ 0
+Button_2
+$Comp
+L power:GND #PWR0101
+U 1 1 617FC351
+P 6350 2050
+F 0 "#PWR0101" H 6350 1800 50  0001 C CNN
+F 1 "GND" H 6355 1877 50  0000 C CNN
+F 2 "" H 6350 2050 50  0001 C CNN
+F 3 "" H 6350 2050 50  0001 C CNN
+	1    6350 2050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 2200 7100 2400
+	6450 2100 6350 2100
+Wire Wire Line
+	6350 2100 6350 2050
 $Comp
-L power:GND #PWR017
-U 1 1 614683C2
-P 6200 2200
-F 0 "#PWR017" H 6200 1950 50  0001 C CNN
-F 1 "GND" H 6205 2027 50  0000 C CNN
-F 2 "" H 6200 2200 50  0001 C CNN
-F 3 "" H 6200 2200 50  0001 C CNN
-	1    6200 2200
+L power:GND #PWR0102
+U 1 1 61800077
+P 5200 2050
+F 0 "#PWR0102" H 5200 1800 50  0001 C CNN
+F 1 "GND" H 5205 1877 50  0000 C CNN
+F 2 "" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	1    5200 2050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6200 2400 6200 2200
-Text GLabel 6100 1900 1    50   Input ~ 0
-Tx_VoiceRec
+	5200 2050 5300 2050
 Wire Wire Line
-	6100 1900 6100 2400
-Text GLabel 6000 1900 1    50   Output ~ 0
-Rx_VoiceRec
+	5300 2050 5300 2100
 Wire Wire Line
-	6000 1900 6000 2400
+	10250 1200 10850 1200
 $Comp
-L power:+5V #PWR013
-U 1 1 61473728
-P 5900 1750
-F 0 "#PWR013" H 5900 1600 50  0001 C CNN
-F 1 "+5V" H 5915 1923 50  0000 C CNN
-F 2 "" H 5900 1750 50  0001 C CNN
-F 3 "" H 5900 1750 50  0001 C CNN
-	1    5900 1750
+L power:GND #PWR0103
+U 1 1 61832251
+P 10850 1200
+F 0 "#PWR0103" H 10850 950 50  0001 C CNN
+F 1 "GND" H 10855 1027 50  0000 C CNN
+F 2 "" H 10850 1200 50  0001 C CNN
+F 3 "" H 10850 1200 50  0001 C CNN
+	1    10850 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 2400 8550 2400
+Wire Wire Line
+	10250 1800 10900 1800
+$Comp
+L power:GND #PWR0104
+U 1 1 61839CBB
+P 10900 1800
+F 0 "#PWR0104" H 10900 1550 50  0001 C CNN
+F 1 "GND" H 10905 1627 50  0000 C CNN
+F 2 "" H 10900 1800 50  0001 C CNN
+F 3 "" H 10900 1800 50  0001 C CNN
+	1    10900 1800
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8650 2500
+$Comp
+L power:+5V #PWR0105
+U 1 1 61854C7E
+P 9000 4000
+F 0 "#PWR0105" H 9000 3850 50  0001 C CNN
+F 1 "+5V" H 9015 4173 50  0000 C CNN
+F 2 "" H 9000 4000 50  0001 C CNN
+F 3 "" H 9000 4000 50  0001 C CNN
+	1    9000 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 1750 5900 2400
+	10250 2200 10350 2200
+Text GLabel 5000 3900 1    50   Input ~ 0
+D_C
+Text GLabel 10350 1700 2    50   Output ~ 0
+D_C
+Wire Wire Line
+	8650 2600 8550 2600
+Text GLabel 8550 2400 0    50   Input ~ 0
+MISO1
+Wire Wire Line
+	4900 4050 4900 3900
+Wire Wire Line
+	8650 3000 8050 3000
+Wire Wire Line
+	8050 3000 8050 2900
 $Comp
-L power:GND #PWR011
-U 1 1 614773AF
-P 5800 2150
-F 0 "#PWR011" H 5800 1900 50  0001 C CNN
-F 1 "GND" H 5805 1977 50  0000 C CNN
-F 2 "" H 5800 2150 50  0001 C CNN
-F 3 "" H 5800 2150 50  0001 C CNN
-	1    5800 2150
-	-1   0    0    1   
+L power:+5V #PWR0106
+U 1 1 6186BFA8
+P 8050 2900
+F 0 "#PWR0106" H 8050 2750 50  0001 C CNN
+F 1 "+5V" H 8065 3073 50  0000 C CNN
+F 2 "" H 8050 2900 50  0001 C CNN
+F 3 "" H 8050 2900 50  0001 C CNN
+	1    8050 2900
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2150 5800 2400
-NoConn ~ 5600 2400
-NoConn ~ 5700 2400
-NoConn ~ 6300 2400
-NoConn ~ 6400 2400
-NoConn ~ 6500 2400
-NoConn ~ 6600 2400
-NoConn ~ 6700 2400
-NoConn ~ 6800 2400
-NoConn ~ 6900 2400
-NoConn ~ 7000 2400
-Text GLabel 8550 1700 0    59   Input ~ 0
-Mic_Out
-NoConn ~ 5000 3900
+	10250 2600 10350 2600
+NoConn ~ 10250 1500
+NoConn ~ 10250 1600
+NoConn ~ 4200 3900
+Text GLabel 4900 3900 1    50   Output ~ 0
+RST
+Text GLabel 10350 2300 2    50   Output ~ 0
+RST
 $EndSCHEMATC
